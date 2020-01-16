@@ -1,0 +1,51 @@
+body {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav {
+  background-color: grey;
+  display: block;
+  padding: 1em 0;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+.scrolling-box {
+  background-color: #eaeaea;
+  display: block;
+  height: 400px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  text-align: center;
+  width: 90%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.ft-sec-blue {
+  background: blue;
+}
+
+.ft-sec-pink {
+  background: pink;
+}
+
+.ft-sec-green {
+  background: green;
+}
