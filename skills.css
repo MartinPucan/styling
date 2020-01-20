@@ -11,8 +11,6 @@ body {
   background-color: #17141d;
   text-align: center;
   z-index: 6;
-  overflow: hidden;
-  margin-bottom: 4px;
 }
 
 .rc_nav a {
@@ -30,8 +28,6 @@ body {
 
 .rc_nav::after {
   content: '';
-  display: block;
-  width: 0;
   height: 2px;
   background: #000;
   transition: width .3s;
@@ -49,12 +45,10 @@ body {
   color: #8e909b;
 }
 
-
 @media screen and (max-width: 820px) {
-  .rc_nav a {display: none;}
+  .rc_nav a {display: inline-block;}
   .rc_nav a.icon {
     float: right;
-    display: block;
     width: 60px;
   }
 }
@@ -68,7 +62,6 @@ body {
   }
   .rc_nav.responsive a {
     float: none;
-    display: block;
     text-align: center;
   }
 }
