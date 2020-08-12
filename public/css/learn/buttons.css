@@ -1,0 +1,24 @@
+.btn {
+  font-size: 20px;
+  padding: 15px 30px;
+  color: white;
+  overflow: hidden;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.btn__success {
+  background: forestgreen;
+}
+.btn__warning {
+  background: darkred;
+}
+.btn__info {
+  background: mediumblue;
+}
+.btn__announcement {
+  background: orange;
+}
+
+/*# sourceMappingURL=buttons.css.map */

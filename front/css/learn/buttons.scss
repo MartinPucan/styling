@@ -1,0 +1,28 @@
+.btn {
+  font-size: 20px;
+  padding: 15px 30px;
+  color: white;
+  overflow: hidden;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
+
+
+  &__success {
+	background: forestgreen;
+  }
+
+  &__warning {
+	background: darkred;
+  }
+
+  &__info {
+	background: mediumblue;
+  }
+
+  &__announcement {
+	background: orange;
+  }
+}
+
