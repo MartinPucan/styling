@@ -1,0 +1,24 @@
+@import "container";
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: Hack, monospace;
+  color: white;
+}
+
+.navbar {
+  margin: auto;
+  padding: .5em;
+  background: #004190;
+  height: 15vh;
+
+  @media screen and (max-width: 600px) {
+	height: 10vh;
+  }
+}
+
+.footer {
+  min-height: 15vh;
+  background: #FF6F49;
+}
