@@ -8,24 +8,26 @@ body {
 .navbar {
   margin: auto;
   padding: .5em;
-  background: #141FD7;
+  background: #007d90;
   height: 15vh;
 }
 
 .container {
   margin: 0 auto;
-  min-height: 75vh;
+  width: 1024px;
+  min-height: 70vh;
   display: flex;
   justify-content: space-around;
   background: whitesmoke;
 
   @media screen and (max-width: 600px) {
 	flex-wrap: wrap;
+	width: 100%;
   }
 
   &__side-left {
 	width: 25%;
-	background: cornflowerblue;
+  	background: #FF0073;
 	display: flex;
 	margin: .3em;
 	flex-direction: column;
@@ -40,7 +42,7 @@ body {
   &__side-right {
 	width: 75%;
 	margin: .3em;
-	background: #AFA8BA;
+	background: #FFBA3F;
 	border-radius: 8px;
 
 	@media screen and (max-width: 600px) {
@@ -69,8 +71,8 @@ body {
 }
 
 .footer {
-  min-height: 20vh;
-  background: #67BAA7;
+  min-height: 15vh;
+  background: #FF6F49;
 }
 
 .tc {
