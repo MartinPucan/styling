@@ -3,10 +3,8 @@
   width: 1024px;
   min-height: 70vh;
   display: flex;
-  justify-content: space-around;
-  background: whitesmoke;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
 	flex-wrap: wrap;
 	width: 100%;
   }
@@ -19,7 +17,7 @@
 	flex-direction: column;
 	border-radius: 8px;
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 768px) {
 	  width: 100%;
 	}
   }
@@ -30,7 +28,7 @@
 	background: #FFBA3F;
 	border-radius: 8px;
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 768px) {
 	  width: 100%;
 	}
   }
