@@ -1,21 +1,25 @@
 .container {
+  display: flex;
   margin: 0 auto;
   width: 1024px;
   min-height: 70vh;
-  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
     flex-wrap: wrap;
-    width: 100%;
   }
 }
 .container__side-left {
   width: 25%;
-  background: #FF0073;
   display: flex;
-  margin: 0.3em;
   flex-direction: column;
+  margin: 0.3em;
+  background: #FF0073;
   border-radius: 8px;
 }
 @media screen and (max-width: 768px) {
@@ -43,11 +47,6 @@
   width: fit-content;
   margin: auto;
 }
-@media screen and (max-width: 600px) {
-  .container-col {
-    flex-shrink: 1;
-  }
-}
 
 .container-row {
   display: flex;
@@ -62,12 +61,11 @@ body {
 }
 
 .navbar {
-  margin: auto;
   padding: 0.5em;
   background: #004190;
   height: 15vh;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .navbar {
     height: 10vh;
   }

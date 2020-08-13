@@ -1,14 +1,16 @@
+@import "../utilities/variables";
+
 .container {
   display: flex;
   margin: 0 auto;
   width: 1024px;
   min-height: 70vh;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: $papa-bear) {
 	width: 100%;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $mama-bear) {
 	flex-wrap: wrap;
   }
 
@@ -20,7 +22,7 @@
 	background: #FF0073;
 	border-radius: 8px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: $mama-bear) {
 	  width: 100%;
 	}
   }
@@ -31,7 +33,7 @@
 	background: #FFBA3F;
 	border-radius: 8px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: $mama-bear) {
 	  width: 100%;
 	}
   }
