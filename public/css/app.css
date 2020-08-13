@@ -116,7 +116,6 @@
 @media screen and (max-width: 600px) {
   .container__side-left {
     width: 100%;
-    margin: 0 auto;
   }
 }
 .container__side-right {
@@ -128,7 +127,6 @@
 @media screen and (max-width: 600px) {
   .container__side-right {
     width: 100%;
-    margin: 0 auto;
   }
 }
 
@@ -163,6 +161,11 @@ body {
   padding: 0.5em;
   background: #007d90;
   height: 15vh;
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    height: 10vh;
+  }
 }
 
 .footer {

@@ -12,6 +12,10 @@ body {
   padding: .5em;
   background: #007d90;
   height: 15vh;
+
+  @media screen and (max-width: 600px) {
+	height: 10vh;
+  }
 }
 
 .footer {
