@@ -1,0 +1,20 @@
+@import "container";
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: Hack, monospace;
+  color: white;
+}
+
+.navbar {
+  margin: auto;
+  padding: .5em;
+  background: #007d90;
+  height: 15vh;
+}
+
+.footer {
+  min-height: 15vh;
+  background: #FF6F49;
+}
