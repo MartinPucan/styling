@@ -2,4 +2,9 @@
   text-align: center;
 }
 
+.line-under {
+  padding-bottom: 0.1em;
+  border-bottom: 1px solid #262626;
+}
+
 /*# sourceMappingURL=text.css.map */

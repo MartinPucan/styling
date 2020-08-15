@@ -50,6 +50,11 @@
   text-align: center;
 }
 
+.line-under {
+  padding-bottom: 0.1em;
+  border-bottom: 1px solid #262626;
+}
+
 .btn {
   font-size: 20px;
   padding: 15px 30px;
@@ -96,6 +101,7 @@
   margin: 0 auto;
   width: 1024px;
   min-height: 70vh;
+  color: white;
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -141,22 +147,20 @@
   margin: auto;
 }
 
+.container-col > button {
+  margin: 0.4em;
+}
+
 .container-row {
   display: flex;
   flex-direction: row;
-}
-
-body {
-  margin: 0 auto;
-  min-height: 100vh;
-  font-family: Hack, monospace;
-  color: white;
 }
 
 .navbar {
   padding: 0.5em;
   background: #004190;
   height: 15vh;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .navbar {
@@ -167,6 +171,39 @@ body {
 .footer {
   min-height: 15vh;
   background: #FF6F49;
+  color: white;
+}
+
+.container-1 {
+  display: flex;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-1 div, .container-2 div {
+  border: 1px #ccc solid;
+  padding: 0.5em;
+}
+
+.box-1 {
+  flex: 1;
+}
+
+.box-2 {
+  flex: 1;
+}
+
+.box-3 {
+  flex: 1;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: Hack, monospace;
 }
 
 /*# sourceMappingURL=app.css.map */

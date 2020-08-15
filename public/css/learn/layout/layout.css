@@ -3,6 +3,7 @@
   margin: 0 auto;
   width: 1024px;
   min-height: 70vh;
+  color: white;
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -48,22 +49,20 @@
   margin: auto;
 }
 
+.container-col > button {
+  margin: 0.4em;
+}
+
 .container-row {
   display: flex;
   flex-direction: row;
-}
-
-body {
-  margin: 0 auto;
-  min-height: 100vh;
-  font-family: Hack, monospace;
-  color: white;
 }
 
 .navbar {
   padding: 0.5em;
   background: #004190;
   height: 15vh;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .navbar {
@@ -74,6 +73,7 @@ body {
 .footer {
   min-height: 15vh;
   background: #FF6F49;
+  color: white;
 }
 
 /*# sourceMappingURL=layout.css.map */

@@ -1,17 +1,11 @@
 @import "../utilities/variables";
 @import "container";
 
-body {
-  margin: 0 auto;
-  min-height: 100vh;
-  font-family: Hack, monospace;
-  color: white;
-}
-
 .navbar {
   padding: .5em;
   background: #004190;
   height: 15vh;
+  color: white;
 
   @media screen and (max-width: $mama-bear) {
 	height: 10vh;
@@ -21,4 +15,5 @@ body {
 .footer {
   min-height: 15vh;
   background: #FF6F49;
+  color: white;
 }

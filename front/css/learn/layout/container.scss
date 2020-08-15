@@ -5,6 +5,7 @@
   margin: 0 auto;
   width: 1024px;
   min-height: 70vh;
+  color: white;
 
   @media screen and (max-width: $papa-bear) {
 	width: 100%;
@@ -46,6 +47,10 @@
   justify-content: space-around;
   width: fit-content;
   margin: auto;
+}
+
+.container-col > button {
+  margin: .4em;
 }
 
 .container-row {
