@@ -115,6 +115,7 @@
 .circle__large {
   height: 50vh;
   width: 50vh;
+  z-index: 1;
   position: relative;
   background: #01bb9d;
   opacity: 0.8;
