@@ -10,8 +10,15 @@
   display: flex;
   justify-content: space-around;
   width: 90%;
-  margin: 1em;
+  margin: auto;
   padding: 1em;
+}
+@media screen and (max-width: 768px) {
+  .profile__container-tabs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .profile__tab {
   border-radius: 7px;
