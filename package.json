@@ -1,0 +1,23 @@
+{
+  "name": "styling",
+  "version": "1.0.0",
+  "description": "repo-for-learn",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinPucan/styling.git"
+  },
+  "author": "MartinPucan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinPucan/styling/issues"
+  },
+  "homepage": "https://github.com/MartinPucan/styling#readme"
+}

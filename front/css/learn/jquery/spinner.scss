@@ -1,0 +1,50 @@
+/*Hidden class for adding and removing*/
+.lds-dual-ring.hidden {
+  display: none;
+}
+
+/*Add an overlay to the entire page blocking any further presses to buttons or other elements.*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+/*Spinner Styles*/
+.lds-dual-ring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 5% auto;
+  border-radius: 50%;
+  border: 6px solid #ab0707;
+  border-color: #b11313 transparent #580e0e transparent;
+  animation: lds-dual-ring 1.3s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+	transform: rotate(0deg);
+  }
+  20% {
+	transform: rotate(100deg);
+  }
+  60% {
+	transform: rotate(300deg);
+  }
+  100% {
+	transform: rotate(360deg);
+  }
+}
