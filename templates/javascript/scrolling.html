@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scrolling</title>
+</head>
+<body>
+
+</body>
+<script>
+	function getScrollTop() {
+		if (typeof pageYOffset !== 'undefined') {
+			return console.table('dunno');
+		} else {
+			const bodyD = document.body;
+			let docEl = document.documentElement;
+			docEl = (docEl.clientHeight) ? docEl : bodyD;
+
+			console.log('work');
+			return docEl.scrollTop;
+		}
+	}
+	alert(getScrollTop())
+</script>
+</html>
