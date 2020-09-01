@@ -5,12 +5,16 @@
 	<title>Scrolling</title>
 </head>
 <body>
+<h1>JavaScript fun</h1>
+<p id="bestDay">This is gonna be the best day ever</p>
+<button type="button" onclick="strReplace();">Replace</button>
 
 </body>
 <script>
 	function getScrollTop() {
 		if (typeof pageYOffset !== 'undefined') {
-			return console.table('dunno');
+			console.log('message');
+			return pageYOffset;
 		} else {
 			const bodyD = document.body;
 			let docEl = document.documentElement;
@@ -20,6 +24,17 @@
 			return docEl.scrollTop;
 		}
 	}
-	alert(getScrollTop())
+
+	const message = "This gonna be the day ever ";
+	const one = 1;
+
+	console.log(message + one);
+
+	function strReplace() {
+		const sentence = "This is gonna be the best day ever";
+		document.getElementById('bestDay').innerHTML = sentence.replace(/e/g, "=");
+	}
+
+	console.log(getScrollTop());
 </script>
 </html>
