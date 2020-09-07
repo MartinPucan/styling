@@ -11,4 +11,5 @@ function bins(n) {
 	}
 }
 
-console.log(bins(4));
+console.log(bins(2));
+console.log(bins(3));
