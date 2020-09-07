@@ -9,5 +9,4 @@ const printToTen = () => {
 	}
 }
 
-
 printToTen();
