@@ -1,77 +1,43 @@
-// const video = {
-// 	title: 'a',
-// 	play() {
-// 		console.log(this);
-// 	}
-// };
-//
-// video.stop = function () {
-// 	console.log(this);
-// }
-//
-// video.play();
+const video = {
+	title: 'a',
+	name: 'Breakpoint',
+	play() {
+		console.log(this);
+	},
+	resume() {
+		console.log(this);
+	}
+};
 
-// let fun = function () {
-// 	alert(this);
-// }
-// fun();
-//
-// let obj1 = { fun: fun };
-// let obj2 = { fun: fun };
-//
-// obj1.fun();
-// obj2.fun();
-
-// fun == obj1.fun == obj2.fun
-
-/**
- * When your return a property, the value of the property
- * is equal to the returned value,
- * not the value set in the constructor function
- * @returns {{make: string}}
- * @constructor
- */
-function Car() {
-	this.make = 'Lamborghini';
-	return { make: 'Ferrari' };
+video.stop = function () {
+	console.table(this);
 }
 
-const myCar = new Car();
-console.log(myCar.make);
-
-
-/**
- * The .push() method returns the length of the new array
- * Previously, the array contained one element and had a length of 1
- * After adding the string 'apple' to the array, the array contains two elements and has a length of 2.
- * This gets returned from the addToList function
- * @param item
- * @param list
- * @returns {*|number}
- */
-function addToList(item, list) {
-	return list.push(item);
+video.resume = function () {
+	console.log(this);
 }
 
-const result = addToList('apple', ['banana']);
-console.log(result);
+video.play();
+
+video.type = 'comedy';
 
 
-/**
- * The rest parameter(...args) lets us "collect" all remaining arguments into an array.
- * An array is an object, so typeof args returns "object".
- * @param args
- */
-function getAge(...args) {
-	console.log(typeof args);
+// const video1 = video;
+
+console.log(video);
+
+
+
+let fun = function () {
+	console.log(this);
 }
 
-getAge(21);
+fun();
 
-/**
- * If you have two keys with the same name, the key will be replaced.
- * It will still be in its first position, but with the last specified value.
- * @type {{a: string, b: string}}
- */
-const obj = { a: 'one', b: 'two', a: 'three'};
-console.log(obj);
+let obj1 = { fun: fun };
+let obj2 = { fun: fun };
+
+obj1.fun();
+obj2.fun();
+
+console.log(fun === obj1.fun === obj2.fun);

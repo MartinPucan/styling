@@ -485,6 +485,39 @@ p {
   width: 800px;
 }
 
+.example-parent {
+  border: 2px solid #DFA612;
+  border-radius: 6px;
+  color: black;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.example-origin {
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.example-draggable {
+  background-color: #4AAE9B;
+  border-radius: 6px;
+  font-weight: normal;
+  margin: 0.3em;
+  padding: 0.5em;
+}
+
+.example-dropzone {
+  background-color: #6DB65B;
+  border-radius: 6px;
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 10px;
+}
+
 body {
   margin: 0 auto;
   min-height: 100vh;
