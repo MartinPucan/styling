@@ -5,35 +5,34 @@
  * @returns {{make: string}}
  * @constructor
  */
-function car() {
-	this.make = 'Lamborghini';
-	this.wut = 'WoW';
-	this.name = 'Audi';
-	const obj = { make: 'Ferrari' };
-	// console.log(typeof obj);
+function car () {
+  this.make = 'Lamborghini'
+  this.wut = 'WoW'
+  this.name = 'Audi'
+  const obj = { make: 'Ferrari' }
+  // console.log(typeof obj);
 
-	return obj;
+  return obj
 }
 
-console.log(typeof car()); // object
+console.log(typeof car()) // object
 
-const myCar = new car();
+const myCar = new car()
 
-const betterCar = { make: 'Volvo', wut: 'good', name: 'blues'};
+const betterCar = { make: 'Volvo', wut: 'good', name: 'blues' }
 // Object.assign(myCar, betterCar);
 
-console.log(myCar.make); // Ferrari
-console.log(myCar.wut); //
-console.log(myCar);
+console.log(myCar.make) // Ferrari
+console.log(myCar.wut) //
+console.log(myCar)
 
-
-function Car() {
-	this.make = 'Lamborghini';
-	this.delete = 'Lamborghini';
-	return { make: 'Ferrari' };
+function Car () {
+  this.make = 'Lamborghini'
+  this.delete = 'Lamborghini'
+  return { make: 'Ferrari' }
 }
-const myTrash = new Car();
-console.log(myTrash);
+const myTrash = new Car()
+console.log(myTrash)
 
 /**
  * The .push() method returns the length of the new array
@@ -44,36 +43,35 @@ console.log(myTrash);
  * @param list
  * @returns {*|number}
  */
-function addToList(item, list) {
-	return list.push(item);
+function addToList (item, list) {
+  return list.push(item)
 }
 
-const result = addToList('apple', ['banana']);
-console.log(result);
-
+const result = addToList('apple', ['banana'])
+console.log(result)
 
 /**
  * The rest parameter(...args) lets us "collect" all remaining arguments into an array.
  * An array is an object, so typeof args returns "object".
  * @param args
  */
-function getAge(...args) {
-	console.log(typeof args);
+function getAge (...args) {
+  console.log(typeof args)
 }
 
-getAge(21);
+getAge(21)
 
 /**
  * If you have two keys with the same name, the key will be replaced.
  * It will still be in its first position, but with the last specified value.
  * @type {{a: string, b: string}}
  */
-const obj = { a: 'one', b: 'two', a: 'three'};
-console.log(obj);
+const obj = { a: 'one', b: 'two', a: 'three' }
+console.log(obj)
 
 /* Declare the function 'myFunc' */
-function myFunc(theObject) {
-	theObject.brand = "Toyota";
+function myFunc (theObject) {
+  theObject.brand = 'Toyota'
 }
 
 /*
@@ -82,19 +80,19 @@ function myFunc(theObject) {
  * assign reference to it to 'mycar'
  */
 const myVehicle = {
-	brand: "Honda",
-	model: "Accord",
-	year: 1998
-};
+  brand: 'Honda',
+  model: 'Accord',
+  year: 1998
+}
 
 /* Logs 'Honda' */
-console.log(myVehicle.brand);
+console.log(myVehicle.brand)
 
 /* Pass object reference to the function */
-myFunc(myVehicle);
+myFunc(myVehicle)
 
 /*
  * Logs 'Toyota' as the value of the 'brand' property
  * of the object, as changed to by the function.
  */
-console.log(myVehicle.brand);
+console.log(myVehicle.brand)

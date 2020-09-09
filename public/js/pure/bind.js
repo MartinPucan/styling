@@ -1,10 +1,10 @@
-let f1 = function () {
-	alert(this.name);
+const f1 = function () {
+  alert(this.name)
 }
 
-let foo = { name: "foo" }
-let bar = { name: "bar" }
-f1.call(foo);
+const foo = { name: 'foo' }
+const bar = { name: 'bar' }
+f1.call(foo)
 
-let f2 = f1.bind(bar);
-f2();
+const f2 = f1.bind(bar)
+f2()
