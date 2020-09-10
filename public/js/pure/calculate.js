@@ -1,21 +1,21 @@
-window.onload = function() {
-	let button = document.getElementById("button");
-	let number1 = document.getElementById("number1");
-	let number2 = document.getElementById("number2");
+window.onload = function () {
+  const button = document.getElementById('button')
+  const number1 = document.getElementById('number1')
+  const number2 = document.getElementById('number2')
 
-	button.onclick = function() {
-		alert(parseInt(number1.value) + parseInt(number2.value));
-	};
+  button.onclick = function () {
+    alert(parseInt(number1.value) + parseInt(number2.value))
+  }
 }
 
 document.addEventListener('keyup', function (event) {
-	if (event.defaultPrevented) {
-		return;
-	}
+  if (event.defaultPrevented) {
+    return
+  }
 
-	const key = event.key || event.keyCode;
+  const key = event.key || event.keyCode
 
-	if (key === 'Enter' || key === 13) {
-		document.getElementById("calculator").click();
-	}
-});
+  if (key === 'Enter' || key === 13) {
+    document.getElementById('calculator').click()
+  }
+})
