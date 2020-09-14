@@ -1,28 +1,28 @@
 function onDragStart (event) {
   event
     .dataTransfer
-    .setData('text/plain', event.target.id)
+    .setData('text/plain', event.target.id);
 
   event
     .currentTarget
     .style
-    .backgroundColor = 'yellow'
+    .backgroundColor = 'yellow';
 }
 
 function onDragOver (event) {
-  event.preventDefault()
+  event.preventDefault();
 }
 
 function onDrop (event) {
   const id = event
     .dataTransfer
-    .getData('text')
+    .getData('text');
 
-  const draggableElement = document.getElementById(id)
-  const dropzone = event.target
-  dropzone.appendChild(draggableElement)
+  const draggableElement = document.getElementById(id);
+  const dropzone = event.target;
+  dropzone.appendChild(draggableElement);
 
   event
     .dataTransfer
-    .clearData()
+    .clearData();
 }
