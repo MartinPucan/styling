@@ -7,14 +7,15 @@
     "@anyware/coding-style": "^1.7.1",
     "@code-styling/eslint-config": "0.0.6-beta.16",
     "eslint-config-standard": "^14.1.1",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "semistandard": "^14.2.3"
   },
   "devDependencies": {
     "eslint": "^7.8.1",
     "standard": "^14.3.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "semistandard"
   },
   "repository": {
     "type": "git",

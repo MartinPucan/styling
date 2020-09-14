@@ -1,1 +1,1 @@
-const canRunAds = true
+const canRunAds = true;

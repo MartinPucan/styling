@@ -1,11 +1,11 @@
 document.addEventListener('keyup', function (event) {
   if (event.defaultPrevented) {
-    return
+    return;
   }
 
-  const key = event.key || event.keyCode
+  const key = event.key || event.keyCode;
 
   if (key === 'Enter' || key === 13) {
-    alert('You pressed the Enter')
+    alert('You pressed the Enter');
   }
-})
+});
