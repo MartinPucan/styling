@@ -26,12 +26,13 @@
 
 .lds-dual-ring:after {
   content: " ";
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 64px;
   height: 64px;
   margin: 5% auto;
   border-radius: 50%;
-  border: 6px solid #ab0707;
   border-color: #b11313 transparent #580e0e transparent;
   animation: lds-dual-ring 1.3s linear infinite;
 }
