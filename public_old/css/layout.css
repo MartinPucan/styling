@@ -1,0 +1,14 @@
+.with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    flex-basis: 5rem;
+    flex-grow: 1;
+}
+
+.not-sidebar {
+    min-width: 50%;
+    flex-grow: 0;
+}

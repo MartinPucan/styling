@@ -1,0 +1,42 @@
+.btn {
+  font-size: 20px;
+  padding: 15px 30px;
+  color: white;
+  overflow: hidden;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+@media all and (min-width: 0px) and (max-width: 480px) {
+  .btn {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .btn {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+}
+.btn__success {
+  background: forestgreen;
+}
+.btn__warning {
+  background: darkred;
+}
+.btn__info {
+  background: mediumblue;
+}
+.btn__announcement {
+  background: orange;
+}
+
+/*# sourceMappingURL=buttons.css.map */

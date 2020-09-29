@@ -1,0 +1,154 @@
+body {
+  background: #eee;
+  color: #3d3d3d;
+  margin: 0;
+  font-family: 'Advent pro', serif;
+}
+
+#insert div {
+  margin: 15px 0 15px 4%;
+  padding: 2%;
+  background: #fff;
+  width: 40%;
+  float: left;
+}
+
+#insert .gray {
+  background: #cacaca;
+  width: 300px;
+  padding: 20px;
+  min-height: 100px;
+}
+
+#insert .red {
+  background: red;
+  width: 80%;
+  margin: 8%;
+  padding: 2%;
+}
+
+/**
+ * Vsechny slidy
+ */
+ul.easySlider-content {
+  padding: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  height: 250px;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 10px #aaa;
+  -moz-box-shadow: 0 0 10px #aaa;
+  box-shadow: 0 0 10px #aaa;
+  border: 1px solid #dcdcdc;
+  background: #ffffff;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #ffffff 1%, #eeeeee 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eeeeee));
+  background: -webkit-linear-gradient(top,  #ffffff 1%,#eeeeee 100%);
+  background: -o-linear-gradient(top,  #ffffff 1%,#eeeeee 100%);
+  background: -ms-linear-gradient(top,  #ffffff 1%,#eeeeee 100%);
+  background: linear-gradient(top,  #ffffff 1%,#eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+}
+
+ul.easySlider-content li {
+  margin-right: 20px;
+}
+
+/**
+ * Aktivní slide
+ */
+ul li.active {
+  display: block !important;
+}
+
+/**
+ * Posuvne sipky
+ */
+a.arrowLeft {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #b03535 3px center no-repeat;
+  position: absolute;
+  margin: 140px -48px;
+  border-radius: 50px;
+  border: 5px solid #dcdcdc;
+}
+
+a.arrowRight {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #965353 18px center no-repeat;
+  position: absolute;
+  margin: 140px 770px;
+  border: 5px solid #dcdcdc;
+  border-radius: 50px;
+}
+
+a.arrowLeft:hover, a.arrowRight:hover {
+  background-color: #dcdcdc;
+}
+
+/**
+ * Pro plug-in nepotřebný soubor
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
+@font-face {
+  font-family: 'BebasRegular';
+  src: url('http://demos.drahak.eu/js/fonts/BEBAS___-webfont.eot');
+  src: url('http://demos.drahak.eu/js/fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+  url('http://demos.drahak.eu/js/fonts/BEBAS___-webfont.woff') format('woff'),
+  url('http://demos.drahak.eu/js/fonts/BEBAS___-webfont.ttf') format('truetype'),
+  url('http://demos.drahak.eu/js/fonts/BEBAS___-webfont.svg#BebasRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+h1 span {
+  line-height: 0.1em;
+  color: #83a900;
+  text-transform: uppercase;
+}
+
+h1 small {
+  font-size: 0.3em;
+  color: #999;
+}
+
+h2.yes {
+  text-align: center;
+  color: #888;
+  font-size: 2em;
+  margin: -15px 0 30px;
+}
+
+a:hover {
+  color: #000;
+  background: #a4ce00;
+  text-decoration: none;
+}
+
+a.readmore {
+  display: block;
+  float: right;
+  padding: 8px 35px;
+  background: orange;
+  color: #fff;
+  font: normal 1.2em 'BebasRegular', Arial, sans-serif;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  color: #666;
+  margin-top: 8px;
+}
+
+#wrap {
+  margin: 40px auto;
+  width: 800px;
+}

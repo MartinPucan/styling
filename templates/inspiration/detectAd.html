@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/public/css/inspiration/app.css">
+	<script src="/public/js/prebidAds.js"></script>
+	<title>Detect Ad block</title>
+</head>
+<body>
+	<div class="container">
+		Ad Block?
+		<script>
+			let adBlockEnabled = false;
+			const testAd = document.createElement('div');
+			testAd.innerHTML = '&nbsp;';
+			testAd.className = 'adsbox';
+			document.body.appendChild(testAd);
+			window.setTimeout(function() {
+				if (testAd.offsetHeight === 0) {
+					adBlockEnabled = true;
+				}
+				testAd.remove();
+				console.log('AdBlock Enabled? ', adBlockEnabled)
+			}, 100);
+		</script>
+	</div>
+
+</body>
+</html>

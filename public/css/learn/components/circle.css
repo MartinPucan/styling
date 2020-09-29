@@ -1,0 +1,25 @@
+.circle__normal {
+  border-radius: 50%;
+  z-index: 5;
+  background: #00CDAC;
+  height: 40vh;
+  width: 40vh;
+  position: relative;
+}
+.circle__small {
+  position: absolute;
+  z-index: 10;
+  height: 30vh;
+  width: 30vh;
+  background: #00CDAC;
+  opacity: 0.4;
+}
+.circle__large {
+  height: 50vh;
+  width: 50vh;
+  position: relative;
+  background: #01bb9d;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=circle.css.map */

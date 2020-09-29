@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/public/css/app.css">
+	<title>Scroll to hash</title>
+</head>
+<body>
+
+<div class="container-center">
+	<a href="bind.html#button" onclick="jump('button')">Jump</a>
+</div>
+
+<script>
+	function jump(hashtag) {
+		const location = document.getElementById(hashtag).offsetTop;
+		document.scrollTo(0, location);
+	}
+</script>
+</body>
+</html>

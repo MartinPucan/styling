@@ -1,0 +1,29 @@
+.circle {
+
+  &__normal {
+	border-radius : 50%;
+	z-index: 5;
+	background: #00CDAC;
+	height: 40vh;
+	width: 40vh;
+	position: relative;
+	//animation: ripple 15s infinite;
+  }
+
+  &__small {
+	position: absolute;
+	z-index: 10;
+	height: 30vh;
+	width: 30vh;
+	background: #00CDAC;
+	opacity: .4;
+  }
+
+  &__large {
+	height: 50vh;
+	width: 50vh;
+	position: relative;
+	background: #01bb9d;
+	opacity: .8;
+  }
+}

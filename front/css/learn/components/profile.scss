@@ -1,0 +1,54 @@
+.profile {
+  &__border {
+	border: 0;
+	background: #02AAB0;
+	border-radius: 20px;
+	width: 90%;
+	margin: 2em auto;
+	height: 80vh;
+  }
+
+  &__container-tabs {
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	margin: auto;
+	padding: 1em;
+
+	@media screen and (max-width: 768px) {
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+  }
+
+  &__tab {
+	border-radius: 7px;
+	min-width: 150px;
+	cursor: pointer;
+	text-align: center;
+	background: #c5dedc;
+	width: fit-content;
+	padding: .7em;
+  }
+
+  &__content {
+	background: white;
+	border-radius: 15px;
+	width: 90%;
+	margin: auto;
+	padding: 1em;
+	height: 40vh;
+  }
+
+  &__image {
+	border: 4px solid white;
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	position: relative;
+	background: whitesmoke;
+	top: -40px;
+	margin: auto;
+  }
+}

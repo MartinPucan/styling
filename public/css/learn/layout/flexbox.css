@@ -1,0 +1,27 @@
+.container-1 {
+  display: flex;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-1 div, .container-2 div {
+  border: 1px #ccc solid;
+  padding: 0.5em;
+}
+
+.box-1 {
+  flex: 1;
+}
+
+.box-2 {
+  flex: 1;
+}
+
+.box-3 {
+  flex: 1;
+}
+
+/*# sourceMappingURL=flexbox.css.map */

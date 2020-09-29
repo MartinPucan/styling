@@ -1,0 +1,19 @@
+@import "../utilities/variables";
+@import "container";
+
+.navbar {
+  padding: .5em;
+  background: #004190;
+  height: 15vh;
+  color: white;
+
+  @media screen and (max-width: $mama-bear) {
+	height: 10vh;
+  }
+}
+
+.footer {
+  min-height: 15vh;
+  background: #FF6F49;
+  color: white;
+}
