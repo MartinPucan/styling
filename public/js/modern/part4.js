@@ -2,8 +2,10 @@ function calculateAge(age) {
 	return 2020 - age;
 }
 
-function retirement() {
-	const year = calculateAge(60);
-
-	return console.log(year > 1920 ? "true" : "false");
+function retirement(year) {
+	const number = calculateAge(year);
+	const retirement = 65 - number;
+	console.log("Amount years to retirement", retirement, " years.");
 }
+
+retirement(2001);
