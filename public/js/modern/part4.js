@@ -13,6 +13,8 @@ function leftToRetirement(age) {
 	}
 }
 
-leftToRetirement(1950);
+const output = leftToRetirement(1950) + "";
+
+document.write('p', output);
 leftToRetirement(1920);
 leftToRetirement(2000);

@@ -5,7 +5,7 @@ let author = {
 	work: 'programmer',
 
 	get displayName() {
-		return `${name.this} (${this.email})`; // that's called template strings
+		return `${this.name} (${this.email})`; // that's called template strings
 	}
 }
 
@@ -13,8 +13,5 @@ let author = {
 
 console.log(author.displayName);
 
-
-
-
-// let { name, email } = author;
-// console.log(name, email);
+let { work, phone } = author;
+console.log(work, phone);
