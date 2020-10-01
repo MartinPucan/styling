@@ -1,11 +1,18 @@
-function calculateAge(age) {
-	return 2020 - age;
+function calculateAge(yearOfBirth) {
+	return 2020 - yearOfBirth;
 }
 
-function retirement(year) {
-	const number = calculateAge(year);
-	const retirement = 65 - number;
-	console.log("Amount years to retirement", retirement, " years.");
+function leftToRetirement(age) {
+	const currentAge = calculateAge(age);
+	const retirementNumber = 65 - currentAge;
+
+	if (retirementNumber > 0) {
+		console.log(retirementNumber + " years left to retirement.")
+	} else {
+		console.log(Math.abs(retirementNumber) + " in retirement")
+	}
 }
 
-retirement(2001);
+leftToRetirement(1950);
+leftToRetirement(1920);
+leftToRetirement(2000);
