@@ -6,6 +6,7 @@
   "dependencies": {
     "@anyware/coding-style": "^1.7.1",
     "@code-styling/eslint-config": "0.0.6-beta.16",
+    "bootstrap": "^4.5.2",
     "eslint-config-standard": "^14.1.1",
     "jquery": "^3.5.1",
     "semistandard": "^14.2.3"
