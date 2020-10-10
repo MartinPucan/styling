@@ -1,25 +1,23 @@
 (() => {
-	const ul = document.createElement('ul');
-	ul.setAttribute('id','arrayMethods');
+  const ul = document.createElement("ul");
+  ul.setAttribute("id", "arrayMethods");
 
-	const arrayMethods = Object.getOwnPropertyNames(Array.prototype);
+  const arrayMethods = Object.getOwnPropertyNames(Array.prototype);
 
-	const renderProductList = (element, index) => {
-		if (element === 'length') {
-			return;
-		}
+  const renderProductList = (element, index) => {
+    if (element === "length") {
+      return;
+    }
 
-		const li = document.createElement('li');
+    const li = document.createElement("li");
 
-		li.setAttribute('class', 'list-group-item');
-		li.setAttribute('id', index);
-		ul.appendChild(li);
+    li.setAttribute("class", "list-group-item");
+    li.setAttribute("id", index);
+    ul.appendChild(li);
 
-		li.innerHTML = `${element}()`;
-	}
+    li.innerHTML = `${element}()`;
+  };
 
-	document.getElementById('arrayMethodsList').appendChild(ul);
-	arrayMethods.forEach(renderProductList);
-
+  document.getElementById("arrayMethodsList").appendChild(ul);
+  arrayMethods.forEach(renderProductList);
 })();
-
