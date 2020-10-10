@@ -1,5 +1,10 @@
-const name = prompt('What is your name?');
+const firstName = 'Joe';
+const lastName = 'Doe';
 
-name.to
+console.log(firstName.toLowerCase());
+console.log(firstName.toUpperCase());
 
-console.log(name);
+const completeName = firstName + lastName;
+
+console.log(completeName);
+
