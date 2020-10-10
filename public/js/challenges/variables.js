@@ -18,16 +18,113 @@
 // alert(`The string ${wholeName} is ${lengthName} characters long.`);
 
 
-const firstName = prompt('What is your first name?');
-const lastName = prompt('What is your last name?');
-const completeName = firstName.toUpperCase() + " " + lastName.toUpperCase();
-const lengthName = completeName.match(/\S/g).length;
+// const firstName = prompt('What is your first name?');
+// const lastName = prompt('What is your last name?');
+// const completeName = firstName.toUpperCase() + " " + lastName.toUpperCase();
+// const lengthName = completeName.match(/\S/g).length;
 
-alert(`The string ${completeName} is ${lengthName} characters long.`);
+// alert(`The string ${completeName} is ${lengthName} characters long.`);
 
-const result = lengthName + '';
-const p = document.createElement('p')
-const div = document.getElementById('name').appendChild(p);
+// const result = lengthName + '';
+// const p = document.createElement('p')
+// const div = document.getElementById('name').appendChild(p);
 
-p.innerText = result;
 
+// p.innerText = result;
+
+
+const dataset = [2,2,4,2,6,4,7,8,4,2,4,2,6,8,5,0,2];
+const search = 2;
+
+const count = dataset.reduce((n, val) => {
+	return n + (val === search);
+}, 0);
+
+console.log(count);
+
+class Users {
+
+	constructor(users) {
+		this.users = users;
+	}
+
+	printAll() {
+		for (let user of this.users) {
+			console.log(user.id);
+		}
+	}
+
+}
+(async () => {
+
+	let response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=10');
+	let users = new Users( await response.json() );
+
+	users.printAll();
+})();
+
+
+
+
+class Cities {
+
+	constructor(cities) {
+		this.cities = cities;
+	}
+
+	printCities() {
+		for (const city of this.cities) {
+
+			const div = document.getElementById('name');
+			const ul = document.createElement('ul');
+			const li = document.createElement('li');
+			div.appendChild(ul);
+			ul.appendChild(li);
+			li.innerHTML = city;
+		}
+	}
+}
+
+(() => {
+	const cities = ['Monaco', 'Rio', 'Monte Carlo', 'Prague'];
+
+	const allCities = new Cities(cities);
+
+	allCities.printCities();
+})();
+
+
+const body = (name) => {
+	return `Hello, ${name}`;
+}
+
+const age = (age) => {
+	return `Je mi ${age} let.`;
+}
+
+const address = (address) => {
+	return `Bydlim na adrese ${address}`;
+}
+
+const human = {
+	parts: body,
+	age: age,
+	address: address
+}
+
+const adresa = prompt('Kde bydlis')
+
+console.log(human.parts('Simonek kokotek'));
+console.log(human.age(28));
+console.log(human.address(adresa));
+
+const light = ['Luke', 'Obi-Wan', 'Yoda'];
+const dark = ['Vader', 'Palpatine'];
+
+const whichSideOfTheForce = name => {
+	return light.includes(name) ? 'light' :
+		dark.includes(name) ? 'dark' : 'unknown';
+}
+
+console.log(whichSideOfTheForce('Yoda'));   // returns "light"
+console.log(whichSideOfTheForce('Vader')); // returns "unknown"
