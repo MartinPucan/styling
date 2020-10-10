@@ -11,9 +11,23 @@
 // 6. Add an alert dialog box that says "The string '[insert value of third variable here]' is X number of characters long." For example, if the third variable contained the string "SALLY FORTH" then the alert dialog should says "The string 'SALLY FORTH' is 11 characters long."
 
 
-const variable1 = prompt('Whats your name?');
-const variable2 = prompt('Whats your last name');
-const wholeName = variable1.toUpperCase() + " " + variable2.toUpperCase();
-const lengthName = wholeName.length;
+// const variable1 = prompt('Whats your name?');
+// const variable2 = prompt('Whats your last name');
+// const wholeName = variable1.toUpperCase() + " " + variable2.toUpperCase();
+// const lengthName = wholeName.length;
+// alert(`The string ${wholeName} is ${lengthName} characters long.`);
 
-alert(`The string ${wholeName} is ${lengthName} characters long.`);
+
+const firstName = prompt('What is your first name?');
+const lastName = prompt('What is your last name?');
+const completeName = firstName.toUpperCase() + " " + lastName.toUpperCase();
+const lengthName = completeName.match(/\S/g).length;
+
+alert(`The string ${completeName} is ${lengthName} characters long.`);
+
+const result = lengthName + '';
+const p = document.createElement('p')
+const div = document.getElementById('name').appendChild(p);
+
+p.innerText = result;
+
