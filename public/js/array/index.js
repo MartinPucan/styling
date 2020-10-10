@@ -86,19 +86,3 @@ console.log(result);
 ['b', 'c'].unshift('a');
 
 console.log(['a', 'b', 'c'].values().next());
-
-
-const suitsActors = [ 'Donna', 'Harvey', 'Mike', 'Rachel' ];
-
-const createCardActor = (element, index) => {
-	const paragraph = document.createElement('p');
-	const div = document.createElement('div');
-
-	div.setAttribute('class', 'p-2 m-2');
-	div.appendChild(paragraph);
-
-	paragraph.innerHTML = `${element}()`;
-}
-
-document.getElementById('suits').appendChild(div);
-suitsActors.forEach(createCardActor);
