@@ -11,6 +11,3 @@ console.log(completeName);
 const modifiedName = `<h2>${completeName}</h2>`;
 
 document.querySelector('span').innerHTML = modifiedName;
-
-
-
