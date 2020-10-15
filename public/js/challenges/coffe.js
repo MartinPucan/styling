@@ -1,7 +1,5 @@
-let yourDrink = "";
-
-const reverse = function (s) {
-	return s.split("").reverse().join("");
+const reverse = function (yourDrink) {
+	return yourDrink.split("").reverse().join("");
 };
 
 const barista = {
@@ -14,4 +12,4 @@ const barista = {
 	}
 };
 
-console.log(barista.request(''));
+console.log("If you can make this clear, then you have a free drink", barista.request(''));
