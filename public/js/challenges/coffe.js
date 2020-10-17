@@ -13,3 +13,11 @@ const barista = {
 };
 
 console.log("If you can make this clear, then you have a free drink", barista.request(''));
+
+const array = ['aaa', 'bbb', 'ccc'];
+
+function bind(pole, index) {
+	console.log(this.pole + 1)
+}
+
+bind(array);
