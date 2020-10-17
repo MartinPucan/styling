@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Multilevel select</title>
+</head>
+<body>
+
+<div id="selectList">
+</div>
+
+<h3>Structure</h3>
+<div class="mb4">
+	<a class="js-toggle toggle toggle-hide">
+		<i class="fas fa-plus-circle"></i>
+		Assign professions
+	</a>
+	<div class="js-toggle-content toggle-content mt6">
+		<div class="form-group">
+			<input id="autocompletee" class="autocomplete" type="text" placeholder="Search and add" />
+			<div id="autocomplete_result" class="autocomplete-result"></div>
+		</div>
+		<ul id="multilevel" class="toggle-max maxh40vh ov-x-auto toggle-active">
+			<li id="main1" class="js-toggle toggle arrow-angle icon-before"></li>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<li id="main2" class="js-toggle toggle arrow-angle icon-before"></li>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<li id="main3" class="js-toggle toggle arrow-angle icon-before"></li>
+		</ul>
+	</div>
+</div>
+
+<script src="/public/js/work/multiselect.js"></script>
+</body>
+</html>
