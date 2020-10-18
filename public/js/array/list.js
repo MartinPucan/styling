@@ -11,8 +11,10 @@
 
     const li = document.createElement("li");
 
-    li.setAttribute("class", "list-group-item");
-    li.setAttribute("id", index);
+    Object.assign(li, {
+    	className: 'list-group-item',
+			id: index
+		})
     ul.appendChild(li);
 
     li.innerHTML = `${element}()`;
