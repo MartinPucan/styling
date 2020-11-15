@@ -764,6 +764,43 @@ body {
   cursor: pointer;
 }
 
+.wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 50%;
+  margin: 0 auto;
+}
+.wrapper:before {
+  width: 60px;
+  left: 0;
+  height: 100%;
+  background: #222222;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: absolute;
+  content: "";
+}
+.wrapper:after {
+  width: 60px;
+  right: 0;
+  height: 100%;
+  background: #222222;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+  content: "";
+}
+
+.object {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #02AAB0;
+}
+
 body {
   margin: 0 auto;
   min-height: 100vh;
