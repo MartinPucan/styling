@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+.btn-secondary, .btn-primary {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: green;
+  color: black;
+}
+
+.btn-secondary {
+  background: red;
+  color: white;
+}
+
+/*# sourceMappingURL=panicum.css.map */

@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+//@mixin btn-color()
+
+
+%button {
+  padding: .5rem .75rem;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  @extend %button;
+  background: green;
+  color: black;
+}
+
+.btn-secondary {
+  @extend %button;
+  background: red;
+  color: white;
+}
