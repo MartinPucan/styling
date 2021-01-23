@@ -1,0 +1,112 @@
+$menu-size: 20vh;
+
+$media-l: 764px;
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.hero {
+  background: #b03535;
+
+}
+
+%center-flex {
+  display: flex;
+  justify-content: center;
+
+  &-item {
+    align-items: center;
+  }
+}
+
+nav {
+  @extend %center-flex;
+  font-size: 3em;
+  margin: 2rem 0;
+  width: 100%;
+
+  @media all and (max-width: $media-l) {
+    font-size: 2.25em;
+  }
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  grid-template-rows: 25vh;
+  margin: 0 auto;
+
+  @media all and (min-width: $media-l) {
+    width: $media-l;
+  }
+}
+
+.card {
+  width: 97.5%;
+  margin: .75rem auto;
+  border-radius: 30px;
+  background: #4f3bbe;
+  min-height: 20vh;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.radio {
+  position: absolute;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: white;
+  height: $menu-size;
+  bottom: 0;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 1.5em;
+  background: #0a0a0a;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+
+  @media all and (min-width: $media-l) {
+    width: $media-l;
+    font-size: 2.5em;
+  }
+}
+
+.arrow {
+  border: solid #747474;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 10px;
+
+  &:nth-child(2) {
+    border: solid #b3b3b3;
+    border-width: 0 2px 2px 0;
+  }
+
+  &:last-child {
+    border: solid #e5e5e5;
+    border-width: 0 2px 2px 0;
+  }
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.no-decoration {
+  text-decoration: none;
+}
