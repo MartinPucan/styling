@@ -11,7 +11,7 @@ const team = [
 ];
 
 const formattedTeam = new Intl.ListFormat('cs-CS', {style: 'long', type: 'disjunction'}).format(team);
-const formattedTeamCZ = new Intl.ListFormat('en-US', {style: 'long', type: 'conjunction'}).format(team);
+const formattedTeamCZ = new Intl.ListFormat('en-GB', {style: 'long', type: 'conjunction'}).format(team);
 
 div.innerHTML = `<div>${formattedTeam}</div>`;
 div.innerHTML += `<div>${formattedTeamCZ}</div>`;
