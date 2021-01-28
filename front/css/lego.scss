@@ -32,6 +32,16 @@ nav {
   }
 }
 
+.row-30vh {
+  width: 100%;
+  min-height: 30vh;
+  @extend %center-flex;
+}
+
+.fs2 {
+  font-size: 2em;
+}
+
 .container {
   width: 100%;
   display: grid;

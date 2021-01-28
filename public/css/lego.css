@@ -5,7 +5,7 @@ body {
 .hero {
   background: #b03535; }
 
-nav {
+nav, .row-30vh {
   display: flex;
   justify-content: center; }
 nav {
@@ -15,6 +15,13 @@ nav {
   @media all and (max-width: 764px) {
     nav {
       font-size: 2.25em; } }
+
+.row-30vh {
+  width: 100%;
+  min-height: 30vh; }
+
+.fs2 {
+  font-size: 2em; }
 
 .container {
   width: 100%;
@@ -34,6 +41,8 @@ nav {
   min-height: 20vh;
   cursor: pointer;
   position: relative; }
+  .card:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); }
 
 .radio {
   position: absolute;
