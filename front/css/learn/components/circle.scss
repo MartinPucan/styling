@@ -1,29 +1,43 @@
+$circleSize: 150px;
+$leftMove: calc(#{$circleSize} - 50px);
+
+$circleWithImage: (
+	"../../front/images/IMG_2530.jpg",
+	"../../front/images/IMG_2531.jpg",
+	"../../front/images/IMG_2532.jpg",
+	"../../front/images/IMG_2535.jpg",
+	"../../front/images/IMG_2539.jpg",
+	"../../front/images/IMG_2540.jpg"
+);
+
+@for $i from 1 to 6 {
+	$imageUrlPath: nth($circleWithImage, $i);
+
+	.circle:nth-child(#{$i}) {
+		left: calc(#{$leftMove} * #{$i});
+		z-index: $i;
+		background-image: url($imageUrlPath);
+	}
+}
+
+.circles--wrapper {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.circle:last-child {
+	background-image: url("../../front/images/IMG_2540.jpg");
+}
+.circle:first-child {
+	background-image: url("../../front/images/IMG_2543.jpg");
+}
+
 .circle {
-
-  &__normal {
-	border-radius : 50%;
-	z-index: 5;
-	background: #00CDAC;
-	height: 40vh;
-	width: 40vh;
-	position: relative;
-	//animation: ripple 15s infinite;
-  }
-
-  &__small {
 	position: absolute;
-	z-index: 10;
-	height: 30vh;
-	width: 30vh;
-	background: #00CDAC;
-	opacity: .4;
-  }
-
-  &__large {
-	height: 50vh;
-	width: 50vh;
-	position: relative;
-	background: #01bb9d;
-	opacity: .8;
-  }
+	width: $circleSize;
+	height: $circleSize;
+	background-size: cover;
+	border-radius: 50%;
+	border: 15px solid white;
 }
